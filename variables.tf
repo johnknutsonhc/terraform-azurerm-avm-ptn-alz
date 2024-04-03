@@ -172,6 +172,14 @@ DESCRIPTION
   }
 }
 
+variable "skip_policy_assignments" {
+  type        = bool
+  default     = false
+  description = <<DESCRIPTION
+Set to `true` to skip assigning policies to management groups.
+DESCRIPTION
+}
+
 variable "subscription_ids" {
   type        = set(string)
   default     = []
